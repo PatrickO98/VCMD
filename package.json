@@ -1,0 +1,22 @@
+{
+  "name": "vcmd",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000V\u0000C\u0000M\u0000D\u0000\r\u0000 \u0000",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatrickO98/VCMD.git"
+  },
+  "author": "Patrick Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PatrickO98/VCMD/issues"
+  },
+  "homepage": "https://github.com/PatrickO98/VCMD#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
