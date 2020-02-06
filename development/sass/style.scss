@@ -1,7 +1,58 @@
 html, body {
     margin: 0;
+    background-color: #0a2320;
 }
 
 a {
     text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src:    url('assets/fonts/NEXA-LIGHT.OTF'),
+            url('assets/fonts/NexaLight.woff'),
+            url('assets/fonts/NexaLight.woff2'),
+            url('assets/fonts/NexaLight.svg');
+    font-weight: 300; 
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src:    url('assets/fonts/NEXA-BOLD.OTF'),
+            url('assets/fonts/NexaBold.woff'),
+            url('assets/fonts/NexaBold.woff2'),
+            url('assets/fonts/NexaBold.svg');
+    font-weight: bold; 
+}
+
+/* -- Header -- */
+header {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+
+        img.logo {
+            width: 20%;
+        }
+
+        ul.menu {
+            width: 80%;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                a {
+                    font-family: 'Nexa';
+                    font-weight: 300;
+                    color: #fff;
+                }
+            }
+        }
+    }
 }
