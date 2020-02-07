@@ -56,17 +56,23 @@ a {
 
 /* -- Header -- */
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
     .navbar {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 20px 0;
 
         img.logo {
-            width: 20%;
+            width: 15%;
         }
 
         ul.menu {
-            width: 80%;
+            width: 75%;
             list-style: none;
             display: flex;
             justify-content: space-between;
@@ -112,26 +118,43 @@ header {
 
 main {
     section#intro {
+        background-image: url('assets/images/bg.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding-bottom: 120px;
+
         .text {
             padding-left: 80px;
+            padding-top: 200px;
 
             h1 {
                 font-family: 'Nexa';
                 font-weight: bold;
                 font-size: 48px;
                 color: #fff;
+                margin-bottom: 0;
             }
     
             p {
                 font-family: 'Nexa';
                 font-weight: 300;
-                font-size: 20px;
-                line-height: 28px;
+                font-size: 18px;
+                line-height: 24px;
                 color: #a2c986;
                 white-space: pre-line;
     
                 strong {
                     color: #fff;
+                }
+            }
+
+            .download {
+                .links {
+                    display: flex;
+
+                    img {
+                        margin-right: 10px;
+                    }
                 }
             }
         }
