@@ -21,8 +21,18 @@ html, body {
     background-color: #0a2320;
 }
 
+h1,h2,h3,h4,h5,h6,p,a,b,span {
+    font-family: 'Nexa';
+}
+
 a {
     text-decoration: none;
+}
+
+p {
+    font-size: 18px;
+    line-height: 24px;
+    white-space: pre-line;
 }
 
 .container {
@@ -32,7 +42,6 @@ a {
 
 .btn {
     padding: 8px 18px;
-    font-family: 'Nexa';
     font-weight: bold !important;
     border-radius: 25px;
 
@@ -45,7 +54,7 @@ a {
 
     &--green {
         background-color: #1eeb9a;
-        color: #0a2320;
+        color: #0a6057;
     }
 
     &--dark-green {
@@ -60,6 +69,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    background-color: #0a232098;
 
     .navbar {
         display: flex;
@@ -79,7 +89,6 @@ header {
 
             li {
                 a {
-                    font-family: 'Nexa';
                     font-weight: 300;
                     color: #fff;
 
@@ -128,7 +137,6 @@ main {
             padding-top: 200px;
 
             h1 {
-                font-family: 'Nexa';
                 font-weight: bold;
                 font-size: 48px;
                 color: #fff;
@@ -136,7 +144,6 @@ main {
             }
     
             p {
-                font-family: 'Nexa';
                 font-weight: 300;
                 font-size: 18px;
                 line-height: 24px;
@@ -159,16 +166,54 @@ main {
             }
         }
     }
-}
 
-/*.Rectangle_1_copy {
-    background-image: -moz-linear-gradient( 27deg, rgb(0,255,176) 0%, rgb(0,243,91) 100%);
-    background-image: -webkit-linear-gradient( 27deg, rgb(0,255,176) 0%, rgb(0,243,91) 100%);
-    background-image: -ms-linear-gradient( 27deg, rgb(0,255,176) 0%, rgb(0,243,91) 100%);
-    position: absolute;
-    left: 0px;
-    top: 577px;
-    width: 1280px;
-    height: 576px;
-    z-index: 31;
-}*/
+    section#oque {
+        background-image: -moz-linear-gradient( 27deg, rgb(0,255,176) 0%, rgb(0,243,91) 100%);
+        background-image: -webkit-linear-gradient( 27deg, rgb(0,255,176) 0%, rgb(0,243,91) 100%);
+        background-image: -ms-linear-gradient( 27deg, rgb(0,255,176) 0%, rgb(0,243,91) 100%);
+        padding-top: 180px;
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+
+            .text {
+                h2 {
+                    font-weight: bold;
+                    font-size: 48px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    section#estabelecimentos {
+        background-color: #fff;
+        background-image: url('assets/images/green-block.png');
+        background-size: 100px;
+        background-position: left 180px;
+        background-repeat: no-repeat;
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 180px;
+            padding-bottom: 80px;
+
+            .text {
+                padding-left: 80px;
+
+                h2 {
+                    color: #0a6057;
+                    font-size: 48px;
+                    margin: 0;
+                }
+
+                p {
+                    color: #0a6057;
+                }
+            }
+        }
+    }
+}
