@@ -44,6 +44,7 @@ p {
     padding: 8px 18px;
     font-weight: bold !important;
     border-radius: 25px;
+    cursor: pointer;
 
     &--transparent {
         background: transparent;
@@ -319,6 +320,58 @@ main {
 
                     strong {
                         color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    section#implantarapp {
+        background-image: -moz-linear-gradient( 27deg, rgb(0,255,176) 0%, rgb(0,243,91) 100%);
+        background-image: -webkit-linear-gradient( 27deg, rgb(0,255,176) 0%, rgb(0,243,91) 100%);
+        background-image: -ms-linear-gradient( 27deg, rgb(0,255,176) 0%, rgb(0,243,91) 100%);
+
+        .content {
+            padding: 180px 0 80px 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            .text {
+                h2 {
+                    font-weight: bold;
+                    font-size: 48px;
+                    margin: 0;
+                }
+            }
+
+            .form {
+                form {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-end;
+
+                    input {
+                        width: 100%;
+                        padding: 8px 16px;
+                        border-radius: 25px;
+                        background-color: #fff;
+                        border: none;
+                        font-family: 'Nexa';
+                        font-weight: 300;
+                        font-size: 14px;
+                        margin-bottom: 12px;
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                    button {
+                        border: none;
+                        float: right;
+                        margin: 0;
                     }
                 }
             }
