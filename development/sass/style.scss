@@ -381,4 +381,49 @@ main {
             }
         }
     }
+
+    section#contato {
+        background-image: url('assets/images/green-block5.png');
+        background-size: 100px;
+        background-position: left 180px;
+        background-repeat: no-repeat;
+
+        .content {
+            padding: 180px 0 80px 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .info {
+                width: 30%;
+
+                h2 {
+                    margin: 0;
+                    font-size: 46px;
+                    color: #fff;
+                }
+
+                p {
+                    color: #1eeb9a;
+
+                    strong {
+                        color: #fff;
+                    }
+                }
+
+                a {
+                    color: #a2c986;
+                    text-decoration: underline;
+                }
+
+                .social {
+                    display: flex;
+                    
+                    a {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
 }
