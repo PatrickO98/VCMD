@@ -79,8 +79,12 @@ header {
         align-items: center;
         padding: 20px 0;
 
-        img.logo {
+        &>a {
             width: 15%;
+
+            img.logo {
+                width: 100%;
+            }
         }
 
         ul.menu {

@@ -1,3 +1,11 @@
+var $doc = $('html, body');
+$('a').click(function() {
+    $doc.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 1000);
+    return false;
+});
+
 jQuery(document).ready(function(){
     jQuery('.owl-carousel').owlCarousel({
         items: 1,
