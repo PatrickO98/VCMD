@@ -14,6 +14,15 @@ jQuery(document).ready(function(){
         dots: true,
         autoplay: true,
         autoplayTimeout: 8000,
-        margin: 100
+        margin: 100,
+        responsive: {
+            0: {
+                margin: 0
+            },
+
+            980: {
+                margin: 100
+            }
+        }
     });
 });
