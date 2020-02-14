@@ -35,6 +35,11 @@ p {
     white-space: pre-line;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -85,6 +90,10 @@ header {
             img.logo {
                 width: 100%;
             }
+        }
+
+        button.hambg {
+            display: none;
         }
 
         ul.menu {
@@ -424,6 +433,89 @@ main {
                     }
                 }
             }
+        }
+    }
+}
+
+//Mobile
+@media screen and (max-width: 980px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    header {
+        .navbar {
+            justify-content: flex-start;
+
+            button.hambg {
+                display: block;
+                background: transparent;
+                border: none;
+                width: 46px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            &>a {
+                width: 40%;
+                margin-left: calc((100% - 40% - 46px) / 2);
+                margin-right: calc((100% - 40% - 46px) / 2 + 46px);
+            }
+
+            ul.menu {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+
+    main {
+        section#intro {
+            background-image: url('assets/images/bg-mobile-intro.png');
+            background-position: center bottom;
+            padding-bottom: 400px;
+
+            .text {
+                padding-top: 64px;
+                padding-left: 0;
+                width: 80%;
+                margin: 0 auto;
+
+                h1 {
+                    font-size: 36px;
+                    line-height: 1.2;
+                }
+
+                p {
+                    white-space: normal;
+
+                    strong {
+                        color: #a2c986;
+                    }
+                }
+                  
+            }
+        }
+
+        section#estabelecimentos {
+            .content {
+                .text {
+                    width: 100%;
+                    padding-left: 0;
+                }
+            }
+        }
+
+        section .content {
+            flex-wrap: wrap !important;
+            padding-left: 0 !important;
         }
     }
 }
