@@ -736,6 +736,15 @@ main {
                         color: #a2c986;
                         font-size: 14px;
                     }
+
+                    .social {
+                        a {
+                            img {
+                                width: 100%;
+                                margin-top: 0;
+                            }
+                        }
+                    }
                 }
 
                 img {
