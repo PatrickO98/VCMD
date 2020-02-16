@@ -464,6 +464,7 @@ main {
     header {
         .navbar {
             justify-content: flex-start;
+            padding: 10px 0;
 
             button.hambg {
                 display: block;
@@ -477,9 +478,9 @@ main {
             }
 
             &>a {
-                width: 40%;
-                margin-left: calc((100% - 40% - 46px) / 2);
-                margin-right: calc((100% - 40% - 46px) / 2 + 46px);
+                width: 50%;
+                margin-left: calc((100% - 50% - 46px) / 2);
+                margin-right: calc((100% - 50% - 46px) / 2 + 46px);
             }
 
             ul.menu {
@@ -640,6 +641,68 @@ main {
                             }
                         }
                     }
+                }
+            }
+        }
+
+        section#implantarapp {
+            .content {
+                width: 85%;
+                padding-top: 56px;
+                margin: 0 auto;
+
+                .text {
+                    h2 {
+                        font-size: 32px;
+                    }
+
+                    p {
+                        white-space: normal;
+                    }
+                }
+
+                .form {
+                    margin-top: 64px;
+
+                    form {
+                        input {
+                            text-align: center;
+                        }
+
+                        button.btn {
+                            width: 100%;
+                            padding: 12px 18px;
+                            margin-top: 24px;
+                        }
+                    }
+                }
+            }
+        }
+
+        section#contato {
+            background-image: none;
+
+            .content {
+                width: 85%;
+                padding-top: 56px;
+                margin: 0 auto;
+
+                .info {
+                    width: 100%;
+                    
+                    h2 {
+                        font-size: 32px;
+                    }
+
+                    p {
+                        color: #a2c986;
+                        font-size: 14px;
+                    }
+                }
+
+                img {
+                    width: 60%;
+                    margin: 56px auto 0;
                 }
             }
         }
