@@ -188,13 +188,14 @@ main {
         background-image: -ms-linear-gradient( 27deg, rgb(0,255,176) 0%, rgb(0,243,91) 100%);
         position: relative;
         padding-top: 180px;
+        padding-bottom: 80px;
 
         &:before {
             content: "";
             position: absolute;
             top: 0;
-            left: 0;
-            width: 100%;
+            right: 0;
+            width: 100px;
             height: 100%;;
             background-image: url('assets/images/green-block2.png');
             background-size: 100px;

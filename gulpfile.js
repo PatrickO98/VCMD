@@ -6,7 +6,7 @@ var sass            = require('gulp-sass');
 sass.compiler = require('node-sass');
 
 gulp.task('html', function() {
-    const filesToMove = [`development/*.html`, '!node_modules/**/*', '!dist/**/*'];
+    const filesToMove = [`development/*.html`, `development/**/*.html`, '!node_modules/**/*', '!dist/**/*'];
     return gulp.src(filesToMove)
             .pipe(gulp.dest('dist'));
 });
