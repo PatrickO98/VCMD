@@ -78,6 +78,20 @@ header {
     width: 100%;
     background-color: #0a232098;
 
+    .language-selector {
+        display: flex;
+        padding: 12px 12px 0;
+
+        a {
+            width: 20px;
+            margin-right: 10px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
     .navbar {
         display: flex;
         justify-content: space-between;
