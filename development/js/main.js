@@ -29,4 +29,10 @@ $(document).ready(function(){
     $('.navbar button.hambg').click(function() {
         toggleMenu();
     });
+
+    if(window.location.href.includes('success')) {
+        alert('Mensagem enviada com sucesso!')
+    } else if (window.location.href.includes('error')) {
+        alert('Erro ao enviar o formulário.')
+    }
 });
